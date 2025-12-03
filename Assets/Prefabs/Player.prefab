@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4863389337578947070}
   - component: {fileID: 3525549532575938919}
   - component: {fileID: 6170388644159187900}
+  - component: {fileID: 120627765499644282}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -86,6 +87,23 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &120627765499644282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124704951242394142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef83f4f13bf87a429d02587b6fe2eef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactor
+  playerCamera: {fileID: 7336196278042691906}
+  interactDistance: 3
+  interactableLayers:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &5162538255818648610
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +118,7 @@ GameObject:
   - component: {fileID: 8956078465138584123}
   m_Layer: 0
   m_Name: MainCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
