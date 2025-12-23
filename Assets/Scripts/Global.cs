@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Global : MonoBehaviour
 {
+    public static event UnityAction CurrencyChanged;
+
     public static Global Instance;
 
     //TAGS
@@ -18,6 +21,7 @@ public class Global : MonoBehaviour
         set
         {
             gold = value;
+            CurrencyChanged.Invoke();
         }
     }
 
@@ -30,5 +34,8 @@ public class Global : MonoBehaviour
             GameObject.Destroy(gameObject);
     
         DontDestroyOnLoad(gameObject);
+
+        //Default Values
+        gold = 0;
     }
 }

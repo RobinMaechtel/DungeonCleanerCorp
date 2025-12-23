@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class InteractingDebugger : MonoBehaviour
 {
     public GameObject ShopScreen;
+    public GameObject InventoryScreen;
 
     bool isScreenOpen = false;
 
@@ -26,7 +27,10 @@ public class InteractingDebugger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Keyboard.current.tabKey.wasPressedThisFrame)
+        if (Keyboard.current.iKey.wasPressedThisFrame)
+            ToggleInventory();
+
+        if (Keyboard.current.tabKey.wasPressedThisFrame)
             ToggleShop();
     }
 
@@ -42,12 +46,46 @@ public class InteractingDebugger : MonoBehaviour
             }
     }
 
+    public void ToggleInventory()
+    {
+        if(isScreenOpen)
+        {
+            CloseInventoryScreen();
+        }
+        else
+        {
+            OpenInventoryScreen();
+        }
+    }
+
+    public void OpenInventoryScreen()
+    {
+        InventoryScreen.SetActive(true);
+        EnableUIControls();
+    }
+
+    public void CloseInventoryScreen()
+    {
+        InventoryScreen.SetActive(false);
+        DisableUIControls();
+    }
+
     public void OpenDebugScreen()
     {
-        isScreenOpen = true;
 
         ShopScreen.SetActive(true);
+        EnableUIControls();
+    }
+    public void CloseDebugScreen()
+    {
+        ShopScreen.SetActive(false);
+        DisableUIControls();
+    }
 
+    private void EnableUIControls()
+    {
+
+        isScreenOpen = true;
         // Store cursor state
         previousLockMode = Cursor.lockState;
         previousCursorVisible = Cursor.visible;
@@ -63,11 +101,10 @@ public class InteractingDebugger : MonoBehaviour
                 script.enabled = false;
         }
     }
-    public void CloseDebugScreen()
+
+    private void DisableUIControls()
     {
         isScreenOpen = false;
-        ShopScreen.SetActive(false);
-
         // Restore cursor state
         Cursor.lockState = previousLockMode;
         Cursor.visible = previousCursorVisible;
