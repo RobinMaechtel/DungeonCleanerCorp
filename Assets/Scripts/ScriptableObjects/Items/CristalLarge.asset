@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550e7e0e64c20274fa0e28fac55c7548, type: 3}
+  m_Name: CristalLarge
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
+  Id: 1
+  Icon: {fileID: 1352274302, guid: f5ba0c9ef70a94c45977051177f8b1e1, type: 3}
+  WorldPrefab: {fileID: 4443801817665418336, guid: 57c73d9f2d5ad3142ba4cfc272d54a05, type: 3}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 550e7e0e64c20274fa0e28fac55c7548, type: 3}
-  m_Name: Sword
+  m_Name: CrystalSmall
   m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
   Id: 1
   Icon: {fileID: 1352274302, guid: f5ba0c9ef70a94c45977051177f8b1e1, type: 3}
