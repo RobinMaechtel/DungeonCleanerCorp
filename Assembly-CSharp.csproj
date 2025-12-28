@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Slicing\CuttableLimbHitbox.cs" />
     <Compile Include="Assets\Scripts\BaseExit.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControllerRB.cs" />
     <Compile Include="Assets\Scripts\Shop\ShopItem.cs" />
     <Compile Include="Assets\Scripts\Player\RagdollGrabber.cs" />
     <Compile Include="Assets\Scripts\UI\InventoryController.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\DebugManager.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\UI\GridSystem\InventoryUIContext.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerGrabberRB.cs" />
     <Compile Include="Assets\Scripts\Interactable\Interactable.cs" />
     <Compile Include="Assets\Scripts\Interactable\ToolBase.cs" />
     <Compile Include="Assets\Scripts\Manager\InteractingDebugger.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Assets\Scripts\Interactable\ITool.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Global.cs" />
+    <Compile Include="Assets\Scripts\Grapping\Grappable.cs" />
     <Compile Include="Assets\Scripts\Interactable\PickaxeTool.cs" />
     <Compile Include="Assets\Scripts\Interactable\SwordTool.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\ItemDefinition.cs" />
